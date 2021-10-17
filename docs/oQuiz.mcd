@@ -1,0 +1,17 @@
+UTILISATEUR: _nom, prénom, _email, mot de passe
+est auteur de, 0N UTILISATEUR, 11 QUIZ
+QUIZ: titre, description
+appartient, 0N QUIZ, 0N THEME
+THEME: nom
+
+contient, 0N QUIZ, 01 QUESTION
+
+NIVEAU: nom
+concerne, 11 QUESTION, 0N NIVEAU
+QUESTION: description, anecdote, wiki
+peut avoir, 0N QUESTION, 11 REPONSE
+
+:
+:
+valide, 01 QUESTION, 01 REPONSE
+REPONSE: description
